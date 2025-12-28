@@ -1,0 +1,80 @@
+# config.toml
+baseURL = "https://YOUR_USERNAME.github.io/blog-network-programming/"
+title = "Blog Lập Trình Mạng"
+theme = "PaperMod"
+languageCode = "vi-vn"
+defaultContentLanguage = "vi"
+
+# Menu
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "🏠 Trang chủ"
+    url = "/"
+    weight = 1
+  
+  [[menu.main]]
+    identifier = "posts"
+    name = "📝 Blog"
+    url = "/posts/"
+    weight = 2
+  
+  [[menu.main]]
+    identifier = "categories"
+    name = "📚 Chuyên mục"
+    url = "/categories/"
+    weight = 3
+  
+  [[menu.main]]
+    identifier = "tags"
+    name = "🏷️ Thẻ"
+    url = "/tags/"
+    weight = 4
+  
+  [[menu.main]]
+    identifier = "about"
+    name = "👨‍💻 Giới thiệu"
+    url = "/about/"
+    weight = 5
+
+# Cấu hình theme
+[params]
+  title = "Blog Lập Trình Mạng"
+  description = "Chia sẻ kiến thức Java & JavaScript từ khoá học thực tế"
+  
+  # Profile
+  profileMode = true
+  profileTitle = "Nguyễn Văn A"
+  profileSubtitle = "Lập trình viên Full-stack"
+  profileImageURL = "/images/avatar.jpg"
+  
+  # Social links
+  socialIcons = [
+    { name = "github", url = "https://github.com/YOUR_USERNAME" },
+    { name = "linkedin", url = "https://linkedin.com/in/YOUR_USERNAME" },
+    { name = "email", url = "mailto:your@email.com" }
+  ]
+  
+  # Custom CSS
+  customCSS = ["css/custom.css"]
+  
+  # Dark mode
+  defaultTheme = "auto"
+  
+  # Featured posts
+  featuredPostCount = 3
+  ShowShareButtons = true
+  ShowReadingTime = true
+
+# Build settings
+[build]
+  writeStats = true
+  useResourceCacheWhen = "always"
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[markup]
+  [markup.highlight]
+    noClasses = false
